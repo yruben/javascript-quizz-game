@@ -1,0 +1,1202 @@
+[
+   {
+      "id": 1,
+      "question": "¿Cuál es el resultado de la siguiente expresión?",
+      "code": "'foo' instanceof String",
+      "answers": [
+         "true",
+         "false",
+         "null",
+         "undefined"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 2,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(typeof NaN);",
+      "answers": [
+         "'number'",
+         "'string'",
+         "'NaN'",
+         "'undefined'"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 3,
+      "question": "¿Cuál es el resultado de 3 + '3' en JavaScript?",
+      "code": "3 + '3'",
+      "answers": [
+         "6",
+         "'6'",
+         "33",
+         "'33'"
+      ],
+      "correctAnswer": 3
+   },
+   {
+      "id": 4,
+      "question": "¿Qué hace el método 'finally' en una promesa?",
+      "code": "promise.finally(() => {...})",
+      "answers": [
+         "Se ejecuta siempre, independientemente del resultado",
+         "Se ejecuta solo si la promesa es rechazada",
+         "Se ejecuta solo si la promesa es resuelta",
+         "Detiene la ejecución de la promesa"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 5,
+      "question": "¿Qué imprime este código?",
+      "code": "let x = 5;\nsetTimeout(() => {\n  console.log(x);\n}, 0);\nx = 10;",
+      "answers": [
+         "5",
+         "10",
+         "undefined",
+         "null"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 6,
+      "question": "¿Cuál es el resultado de este código?",
+      "code": "console.log([] == ![]);",
+      "answers": [
+         "true",
+         "false",
+         "undefined",
+         "Error"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 7,
+      "question": "¿Qué imprime este código?",
+      "code": "async function foo() {\n  return await Promise.resolve('bar');\n}\nfoo().then(console.log);",
+      "answers": [
+         "'bar'",
+         "Promise {<resolved>: 'bar'}",
+         "undefined",
+         "Error"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 8,
+      "question": "¿Qué hace el operador '??' en JavaScript?",
+      "code": "const result = value ?? defaultValue;",
+      "answers": [
+         "Operador de coalescencia nula",
+         "Operador OR lógico",
+         "Operador AND lógico",
+         "Operador ternario"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 9,
+      "question": "¿Qué imprime este código?",
+      "code": "const arr = [1, 2, 3];\narr[10] = 11;\nconsole.log(arr.length);",
+      "answers": [
+         "3",
+         "10",
+         "11",
+         "4"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 10,
+      "question": "¿Cuál es el resultado de este código?",
+      "code": "function foo(a = b, b = 2) {\n  console.log(a, b);\n}\nfoo();",
+      "answers": [
+         "undefined 2",
+         "2 2",
+         "ReferenceError",
+         "undefined undefined"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 11,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(typeof typeof 1);",
+      "answers": [
+         "'number'",
+         "'string'",
+         "'object'",
+         "'undefined'"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 12,
+      "question": "¿Cuál es el propósito de 'use strict' en JavaScript?",
+      "code": "\"use strict\";",
+      "answers": [
+         "Hacer que el código sea más rápido",
+         "Habilitar un modo con reglas más estrictas",
+         "Forzar el tipado estático",
+         "Desactivar características obsoletas"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 13,
+      "question": "¿Qué imprime este código?",
+      "code": "const promise = new Promise((res) => res(2))\n  .then((v) => v * 2)\n  .then((v) => { throw v })\n  .catch((v) => v * 2)\n  .then((v) => console.log(v));",
+      "answers": [
+         "2",
+         "4",
+         "8",
+         "16"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 14,
+      "question": "¿Qué método se usa para combinar dos promesas?",
+      "code": "",
+      "answers": [
+         "Promise.merge()",
+         "Promise.combine()",
+         "Promise.all()",
+         "Promise.join()"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 15,
+      "question": "¿Qué imprime este código?",
+      "code": "let a = {}\nlet b = {}\nconsole.log(a == b, a === b);",
+      "answers": [
+         "true true",
+         "false false",
+         "true false",
+         "false true"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 16,
+      "question": "¿Qué es un closure en JavaScript?",
+      "code": "",
+      "answers": [
+         "Una función que retorna otra función",
+         "Una función con acceso a su ámbito externo",
+         "Una función anónima",
+         "Un bloque de código delimitado por llaves"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 17,
+      "question": "¿Qué imprime este código?",
+      "code": "function foo() {\n  return\n  {\n    bar: 'baz'\n  };\n}\nconsole.log(foo());",
+      "answers": [
+         "{ bar: 'baz' }",
+         "undefined",
+         "null",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 18,
+      "question": "¿Qué hace el operador '...' en JavaScript?",
+      "code": "const arr = [...otherArr];",
+      "answers": [
+         "Operador de propagación",
+         "Operador de resto",
+         "Operador de concatenación",
+         "Operador de desestructuración"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 19,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(0.1 + 0.2 === 0.3);",
+      "answers": [
+         "true",
+         "false",
+         "undefined",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 20,
+      "question": "¿Qué es el hoisting en JavaScript?",
+      "code": "",
+      "answers": [
+         "Movimiento de declaraciones al inicio del ámbito",
+         "Movimiento de asignaciones al inicio del ámbito",
+         "Elevación de objetos al global scope",
+         "Un patrón de diseño"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 21,
+      "question": "¿Qué imprime este código?",
+      "code": "const obj = {\n  a: 1,\n  b: 2,\n  a: 3\n};\nconsole.log(obj.a);",
+      "answers": [
+         "1",
+         "3",
+         "undefined",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 22,
+      "question": "¿Qué método se usa para convertir un objeto a JSON?",
+      "code": "",
+      "answers": [
+         "JSON.encode()",
+         "JSON.stringify()",
+         "JSON.toJson()",
+         "JSON.parse()"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 23,
+      "question": "¿Qué imprime este código?",
+      "code": "async function foo() {\n  await Promise.reject('error');\n  return 'success';\n}\nfoo().catch(console.log);",
+      "answers": [
+         "'success'",
+         "'error'",
+         "undefined",
+         "Promise {<rejected>: 'error'}"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 24,
+      "question": "¿Qué es una IIFE?",
+      "code": "(function() { ... })();",
+      "answers": [
+         "Una función que se ejecuta inmediatamente",
+         "Una función asíncrona",
+         "Una función generadora",
+         "Una función flecha"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 25,
+      "question": "¿Qué imprime este código?",
+      "code": "const arr = [1, 2, 3];\narr.length = 0;\nconsole.log(arr);",
+      "answers": [
+         "[1, 2, 3]",
+         "[]",
+         "[undefined, undefined, undefined]",
+         "[null, null, null]"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 26,
+      "question": "¿Qué método de array NO muta el array original?",
+      "code": "",
+      "answers": [
+         "push()",
+         "pop()",
+         "slice()",
+         "splice()"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 27,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(typeof function() {});",
+      "answers": [
+         "'function'",
+         "'object'",
+         "'undefined'",
+         "'string'"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 28,
+      "question": "¿Qué hace el método 'bind'?",
+      "code": "func.bind(thisArg);",
+      "answers": [
+         "Crea una nueva función con un 'this' específico",
+         "Ejecuta la función inmediatamente",
+         "Copia la función",
+         "Convierte la función en asíncrona"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 29,
+      "question": "¿Qué imprime este código?",
+      "code": "const foo = () => console.log(arguments);\nfoo(1, 2, 3);",
+      "answers": [
+         "[1, 2, 3]",
+         "{0: 1, 1: 2, 2: 3}",
+         "ReferenceError",
+         "undefined"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 30,
+      "question": "¿Qué es el event loop en JavaScript?",
+      "code": "",
+      "answers": [
+         "Un bucle que ejecuta tareas asíncronas",
+         "Un patrón de diseño para eventos",
+         "Una estructura de datos para colas",
+         "Un mecanismo de recursión"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 31,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(1 < 2 < 3);\nconsole.log(3 > 2 > 1);",
+      "answers": [
+         "true true",
+         "true false",
+         "false true",
+         "false false"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 32,
+      "question": "¿Qué método se usa para programar una función para ejecutarse después de un retraso?",
+      "code": "",
+      "answers": [
+         "setInterval()",
+         "setTimeout()",
+         "delay()",
+         "wait()"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 33,
+      "question": "¿Qué imprime este código?",
+      "code": "const obj = { a: 1 };\nconst obj2 = obj;\nobj2.a = 2;\nconsole.log(obj.a);",
+      "answers": [
+         "1",
+         "2",
+         "undefined",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 34,
+      "question": "¿Qué es una función pura?",
+      "code": "",
+      "answers": [
+         "Una función sin parámetros",
+         "Una función que no produce efectos secundarios",
+         "Una función asíncrona",
+         "Una función que retorna una promesa"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 35,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log('1' - - '1');",
+      "answers": [
+         "0",
+         "2",
+         "'11'",
+         "'1-1'"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 36,
+      "question": "¿Qué método se usa para heredar prototipos?",
+      "code": "",
+      "answers": [
+         "Object.create()",
+         "Object.new()",
+         "Object.prototype()",
+         "Object.extend()"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 37,
+      "question": "¿Qué imprime este código?",
+      "code": "const foo = { bar: 1 };\nconst baz = foo;\nfoo.bar = 2;\nconsole.log(baz.bar);",
+      "answers": [
+         "1",
+         "2",
+         "undefined",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 38,
+      "question": "¿Qué es el currying en JavaScript?",
+      "code": "",
+      "answers": [
+         "Convertir una función de múltiples argumentos en una secuencia de funciones",
+         "Una técnica para optimizar bucles",
+         "Un patrón de diseño para callbacks",
+         "Una forma de manejar errores"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 39,
+      "question": "¿Qué imprime este código?",
+      "code": "let x = 1;\nfunction foo() {\n  console.log(x);\n  let x = 2;\n}\nfoo();",
+      "answers": [
+         "1",
+         "2",
+         "undefined",
+         "ReferenceError"
+      ],
+      "correctAnswer": 3
+   },
+   {
+      "id": 40,
+      "question": "¿Qué es una WeakMap?",
+      "code": "",
+      "answers": [
+         "Un mapa con claves débiles que no previenen la recolección de basura",
+         "Un mapa con valores débiles",
+         "Un mapa con menor rendimiento",
+         "Un mapa que solo acepta strings como claves"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 41,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log([] + []);",
+      "answers": [
+         "[]",
+         "'[]'",
+         "''",
+         "0"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 42,
+      "question": "¿Qué método se usa para cancelar un setTimeout?",
+      "code": "",
+      "answers": [
+         "clearTimeout()",
+         "cancelTimeout()",
+         "stopTimeout()",
+         "removeTimeout()"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 43,
+      "question": "¿Qué imprime este código?",
+      "code": "const arr = [1, 2, 3];\nconst [x, , y] = arr;\nconsole.log(x, y);",
+      "answers": [
+         "1 2",
+         "1 3",
+         "2 3",
+         "undefined undefined"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 44,
+      "question": "¿Qué es el shadow DOM?",
+      "code": "",
+      "answers": [
+         "Un DOM oculto para privacidad",
+         "Un DOM para elementos no renderizados",
+         "Un árbol DOM encapsulado",
+         "Una copia del DOM principal"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 45,
+      "question": "¿Qué imprime este código?",
+      "code": "const promise = Promise.resolve(1)\n  .then(x => x + 1)\n  .then(x => { throw x })\n  .catch(x => x + 1)\n  .then(x => console.log(x));",
+      "answers": [
+         "1",
+         "2",
+         "3",
+         "Error"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 46,
+      "question": "¿Qué método se usa para clonar un objeto superficialmente?",
+      "code": "",
+      "answers": [
+         "Object.clone()",
+         "Object.assign()",
+         "Object.copy()",
+         "Object.create()"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 47,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(typeof class {});",
+      "answers": [
+         "'class'",
+         "'object'",
+         "'function'",
+         "'undefined'"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 48,
+      "question": "¿Qué es memoization?",
+      "code": "",
+      "answers": [
+         "Una técnica de optimización que almacena resultados de llamadas costosas",
+         "Un patrón de diseño para manejo de estado",
+         "Una forma de serializar funciones",
+         "Un método para medir memoria"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 49,
+      "question": "¿Qué imprime este código?",
+      "code": "const obj = { a: 1 };\nObject.freeze(obj);\nobj.a = 2;\nconsole.log(obj.a);",
+      "answers": [
+         "1",
+         "2",
+         "undefined",
+         "Error"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 50,
+      "question": "¿Qué es un generator en JavaScript?",
+      "code": "function* gen() {}",
+      "answers": [
+         "Una función que puede pausar y reanudar su ejecución",
+         "Una función que genera números aleatorios",
+         "Una función que crea iteradores",
+         "Una función que produce valores en secuencia"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 51,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(new Date(0));",
+      "answers": [
+         "Current date",
+         "January 1, 1970",
+         "December 31, 1969",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 52,
+      "question": "¿Qué método se usa para convertir un string JSON a objeto?",
+      "code": "",
+      "answers": [
+         "JSON.decode()",
+         "JSON.parse()",
+         "JSON.toObject()",
+         "JSON.stringify()"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 53,
+      "question": "¿Qué imprime este código?",
+      "code": "const arr = [1, 2, 3];\narr[5] = 6;\nconsole.log(arr[4]);",
+      "answers": [
+         "undefined",
+         "null",
+         "0",
+         "Error"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 54,
+      "question": "¿Qué es el polyfilling en JavaScript?",
+      "code": "",
+      "answers": [
+         "Implementar funcionalidades modernas en navegadores antiguos",
+         "Un método para optimizar imágenes",
+         "Una técnica de seguridad",
+         "Un patrón de diseño para formularios"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 55,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(Number('1') - Number('1'));",
+      "answers": [
+         "0",
+         "'11'",
+         "NaN",
+         "Error"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 56,
+      "question": "¿Qué método se usa para manejar errores en promesas?",
+      "code": "",
+      "answers": [
+         ".error()",
+         ".catch()",
+         ".fail()",
+         ".then(null, handler)"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 57,
+      "question": "¿Qué imprime este código?",
+      "code": "const obj = { a: 1 };\nwith(obj) {\n  console.log(a);\n}",
+      "answers": [
+         "1",
+         "undefined",
+         "ReferenceError",
+         "Error"
+      ],
+      "correctAnswer": 3
+   },
+   {
+      "id": 58,
+      "question": "¿Qué es el operador 'in' en JavaScript?",
+      "code": "'prop' in object",
+      "answers": [
+         "Verifica si una propiedad existe en un objeto",
+         "Verifica si un valor está en un array",
+         "Operador de inclusión de strings",
+         "Operador de instancia"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 59,
+      "question": "¿Qué imprime este código?",
+      "code": "const arr = [1, 2, 3];\narr.splice(1, 0, 4);\nconsole.log(arr);",
+      "answers": [
+         "[1, 2, 3]",
+         "[1, 4, 2, 3]",
+         "[4, 1, 2, 3]",
+         "[1, 2, 4, 3]"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 60,
+      "question": "¿Qué es una función throttle?",
+      "code": "",
+      "answers": [
+         "Una función que limita la frecuencia de ejecución",
+         "Una función que optimiza el rendimiento",
+         "Una función que maneja eventos de teclado",
+         "Una función que cancela operaciones"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 61,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(void 0);",
+      "answers": [
+         "0",
+         "undefined",
+         "null",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 62,
+      "question": "¿Qué método se usa para ejecutar una función después de que se resuelvan múltiples promesas?",
+      "code": "",
+      "answers": [
+         "Promise.any()",
+         "Promise.all()",
+         "Promise.race()",
+         "Promise.some()"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 63,
+      "question": "¿Qué imprime este código?",
+      "code": "const sym = Symbol('foo');\nconsole.log(typeof sym);",
+      "answers": [
+         "'symbol'",
+         "'string'",
+         "'object'",
+         "'function'"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 64,
+      "question": "¿Qué es el operador '??='?",
+      "code": "x ??= y;",
+      "answers": [
+         "Asignación lógica OR",
+         "Asignación lógica AND",
+         "Asignación de coalescencia nula",
+         "Asignación condicional"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 65,
+      "question": "¿Qué imprime este código?",
+      "code": "const obj = { 0: 'a', 1: 'b', length: 2 };\nconsole.log(Array.from(obj));",
+      "answers": [
+         "{0: 'a', 1: 'b'}",
+         "['a', 'b']",
+         "[0, 1]",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 66,
+      "question": "¿Qué método se usa para crear una promesa que se resuelve cuando cualquiera de las promesas se resuelve?",
+      "code": "",
+      "answers": [
+         "Promise.any()",
+         "Promise.all()",
+         "Promise.race()",
+         "Promise.some()"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 67,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(new Array(3));",
+      "answers": [
+         "[undefined, undefined, undefined]",
+         "[3]",
+         "[ , , ]",
+         "Error"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 68,
+      "question": "¿Qué es una función debounce?",
+      "code": "",
+      "answers": [
+         "Una función que retrasa su ejecución hasta que no haya más llamadas",
+         "Una función que cancela llamadas anteriores",
+         "Una función que limita la frecuencia de ejecución",
+         "Una función que maneja errores"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 69,
+      "question": "¿Qué imprime este código?",
+      "code": "const map = new Map();\nmap.set('a', 1);\nmap.set('b', 2);\nconsole.log(map.size);",
+      "answers": [
+         "0",
+         "1",
+         "2",
+         "undefined"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 70,
+      "question": "¿Qué método se usa para crear una promesa rechazada?",
+      "code": "",
+      "answers": [
+         "Promise.reject()",
+         "Promise.fail()",
+         "Promise.error()",
+         "Promise.throw()"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 71,
+      "question": "¿Qué imprime este código?",
+      "code": "const set = new Set([1, 2, 2, 3]);\nconsole.log(set.size);",
+      "answers": [
+         "2",
+         "3",
+         "4",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 72,
+      "question": "¿Qué es el operador '?.' en JavaScript?",
+      "code": "obj?.prop",
+      "answers": [
+         "Operador de encadenamiento opcional",
+         "Operador condicional",
+         "Operador de coalescencia",
+         "Operador de seguridad"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 73,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log([...'hello']);",
+      "answers": [
+         "['h', 'e', 'l', 'l', 'o']",
+         "'hello'",
+         "[NaN, NaN, NaN, NaN, NaN]",
+         "Error"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 74,
+      "question": "¿Qué método se usa para ejecutar una función una vez por cada elemento del array?",
+      "code": "",
+      "answers": [
+         "array.forEach()",
+         "array.map()",
+         "array.filter()",
+         "array.reduce()"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 75,
+      "question": "¿Qué imprime este código?",
+      "code": "const arr = [1, 2, 3];\narr[10] = 11;\nconsole.log(arr.length);",
+      "answers": [
+         "3",
+         "10",
+         "11",
+         "undefined"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 76,
+      "question": "¿Qué es el operador '**' en JavaScript?",
+      "code": "2 ** 3",
+      "answers": [
+         "Multiplicación",
+         "Exponenciación",
+         "Concatenación",
+         "Operador de bits"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 77,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(parseInt('123abc'));",
+      "answers": [
+         "123",
+         "NaN",
+         "'123abc'",
+         "Error"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 78,
+      "question": "¿Qué método se usa para convertir un array a string?",
+      "code": "",
+      "answers": [
+         "array.toString()",
+         "array.join()",
+         "array.stringify()",
+         "array.toText()"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 79,
+      "question": "¿Qué imprime este código?",
+      "code": "const obj = { a: 1 };\nconsole.log('a' in obj, 'toString' in obj);",
+      "answers": [
+         "true true",
+         "true false",
+         "false true",
+         "false false"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 80,
+      "question": "¿Qué es una función de orden superior?",
+      "code": "",
+      "answers": [
+         "Una función que toma o retorna otras funciones",
+         "Una función con complejidad O(n²)",
+         "Una función declarada con 'highorder'",
+         "Una función que solo usa métodos de array"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 81,
+      "question": "¿Qué imprime este código?",
+      "code": "const arr = [1, 2, 3];\narr[100] = undefined;\nconsole.log(arr.length);",
+      "answers": [
+         "3",
+         "100",
+         "101",
+         "undefined"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 82,
+      "question": "¿Qué método se usa para encontrar un elemento en un array?",
+      "code": "",
+      "answers": [
+         "array.search()",
+         "array.find()",
+         "array.locate()",
+         "array.get()"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 83,
+      "question": "¿Qué imprime este código?",
+      "code": "const arr = [1, 2, 3];\nconst [x, ...y] = arr;\nconsole.log(x, y);",
+      "answers": [
+         "1 [2, 3]",
+         "[1] [2, 3]",
+         "1 2",
+         "Error"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 84,
+      "question": "¿Qué es el operador '||='?",
+      "code": "x ||= y;",
+      "answers": [
+         "Asignación lógica OR",
+         "Asignación lógica AND",
+         "Asignación de coalescencia nula",
+         "Asignación condicional"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 85,
+      "question": "¿Qué imprime este código?",
+      "code": "const obj = { a: 1 };\nObject.seal(obj);\nobj.a = 2;\nobj.b = 3;\nconsole.log(obj);",
+      "answers": [
+         "{ a: 1 }",
+         "{ a: 2 }",
+         "{ a: 2, b: 3 }",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 86,
+      "question": "¿Qué método se usa para verificar si un array incluye un valor?",
+      "code": "",
+      "answers": [
+         "array.contains()",
+         "array.includes()",
+         "array.has()",
+         "array.find()"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 87,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(+true, +false);",
+      "answers": [
+         "1 0",
+         "true false",
+         "NaN NaN",
+         "Error"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 88,
+      "question": "¿Qué es el operador '&&='?",
+      "code": "x &&= y;",
+      "answers": [
+         "Asignación lógica OR",
+         "Asignación lógica AND",
+         "Asignación de coalescencia nula",
+         "Asignación condicional"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 89,
+      "question": "¿Qué imprime este código?",
+      "code": "const arr = [1, 2, 3];\narr.copyWithin(1, 2);\nconsole.log(arr);",
+      "answers": [
+         "[1, 2, 3]",
+         "[1, 3, 3]",
+         "[3, 2, 1]",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 90,
+      "question": "¿Qué método se usa para crear una promesa que se resuelve después de un tiempo?",
+      "code": "",
+      "answers": [
+         "Promise.delay()",
+         "Promise.wait()",
+         "Promise.timeout()",
+         "No existe, se usa setTimeout con Promise"
+      ],
+      "correctAnswer": 3
+   },
+   {
+      "id": 91,
+      "question": "¿Qué imprime este código?",
+      "code": "const arr = [1, 2, 3];\narr.fill(4, 1);\nconsole.log(arr);",
+      "answers": [
+         "[1, 2, 3]",
+         "[1, 4, 3]",
+         "[1, 4, 4]",
+         "[4, 4, 4]"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 92,
+      "question": "¿Qué es una tagged template literal?",
+      "code": "tag`text ${var}`",
+      "answers": [
+         "Una función que procesa template literals",
+         "Un template literal con etiquetas HTML",
+         "Un template literal con marcadores",
+         "Un comentario en template literals"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 93,
+      "question": "¿Qué imprime este código?",
+      "code": "const obj = { a: 1 };\nconsole.log(Object.keys(obj).length);",
+      "answers": [
+         "0",
+         "1",
+         "undefined",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 94,
+      "question": "¿Qué método se usa para crear un array a partir de un array-like?",
+      "code": "",
+      "answers": [
+         "Array.from()",
+         "Array.create()",
+         "Array.new()",
+         "Array.of()"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 95,
+      "question": "¿Qué imprime este código?",
+      "code": "console.log(Number.isNaN('foo'));",
+      "answers": [
+         "true",
+         "false",
+         "undefined",
+         "Error"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 96,
+      "question": "¿Qué es un Set en JavaScript?",
+      "code": "",
+      "answers": [
+         "Una colección de valores únicos",
+         "Un array ordenado",
+         "Un mapa de clave-valor",
+         "Una lista enlazada"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 97,
+      "question": "¿Qué imprime este código?",
+      "code": "const arr = [1, 2, 3];\nconsole.log(arr.at(-1));",
+      "answers": [
+         "1",
+         "2",
+         "3",
+         "undefined"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 98,
+      "question": "¿Qué método se usa para unir dos arrays?",
+      "code": "",
+      "answers": [
+         "array.concat()",
+         "array.join()",
+         "array.merge()",
+         "array.combine()"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 99,
+      "question": "¿Qué imprime este código?",
+      "code": "const obj = { a: 1 };\nconsole.log(Object.getOwnPropertyDescriptor(obj, 'a').value);",
+      "answers": [
+         "1",
+         "undefined",
+         "{ value: 1 }",
+         "Error"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 100,
+      "question": "¿Qué es un Proxy en JavaScript?",
+      "code": "",
+      "answers": [
+         "Un objeto que envuelve otro objeto para interceptar operaciones",
+         "Un servidor intermediario",
+         "Un patrón de diseño para observables",
+         "Una función que delega a otra función"
+      ],
+      "correctAnswer": 0
+   }
+]

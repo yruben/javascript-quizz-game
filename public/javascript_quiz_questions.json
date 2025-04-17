@@ -1,0 +1,122 @@
+[
+   {
+      "id": 1,
+      "question": "¿Cuál es el resultado de la siguiente expresión?",
+      "code": "'foo' instanceof String",
+      "answers": [
+         "true",
+         "false",
+         "null",
+         "undefined"
+      ],
+      "correctAnswer": 1
+   },
+   {
+      "id": 2,
+      "question": "¿Qué método se usa para agregar un elemento al final de un array?",
+      "code": "",
+      "answers": [
+         "push()",
+         "add()",
+         "append()",
+         "insert()"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 3,
+      "question": "¿Cómo se declara una variable constante en JavaScript?",
+      "code": "",
+      "answers": [
+         "var",
+         "let",
+         "const",
+         "constant"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 4,
+      "question": "¿Qué hace esta función asíncrona?",
+      "code": "async function obtenerDatos() {\n  return await Promise.resolve('datos');\n}",
+      "answers": [
+         "Retorna una promesa que resuelve 'datos'",
+         "Espera datos del usuario",
+         "Obtiene datos de una base de datos",
+         "No hace nada"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 5,
+      "question": "¿Cuál es el resultado de Promise.all()?",
+      "code": "Promise.all([Promise.resolve(1), Promise.resolve(2)])",
+      "answers": [
+         "[1, 2]",
+         "{a: 1, b: 2}",
+         "1, 2",
+         "Error"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 6,
+      "question": "¿Qué hace el operador '??'?",
+      "code": "const valor = undefined ?? 'default';",
+      "answers": [
+         "Operador de fusión nula",
+         "Operador OR",
+         "Operador AND",
+         "Operador de asignación"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 7,
+      "question": "¿Cómo se maneja un error en una función asíncrona?",
+      "code": "async function ejemplo() {\n  try {\n    await algo()\n  } catch (error) {\n    // ¿Qué va aquí?\n  }\n}",
+      "answers": [
+         "throw error;",
+         "return error;",
+         "console.error(error);",
+         "error.handle();"
+      ],
+      "correctAnswer": 2
+   },
+   {
+      "id": 8,
+      "question": "¿Qué hace el método 'finally' en un bloque try/catch?",
+      "code": "",
+      "answers": [
+         "Se ejecuta siempre al final",
+         "Solo se ejecuta si hay error",
+         "Solo se ejecuta si no hay error",
+         "Nunca se ejecuta"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 9,
+      "question": "¿Qué es una Closure en JavaScript?",
+      "code": "function crearContador() {\n  let contador = 0;\n  return function() {\n    return ++contador;\n  }\n}",
+      "answers": [
+         "Una función que mantiene acceso a su scope exterior",
+         "Una función que solo retorna números",
+         "Una función que no acepta parámetros",
+         "Una función asíncrona"
+      ],
+      "correctAnswer": 0
+   },
+   {
+      "id": 10,
+      "question": "¿Qué hace el operador '...'?",
+      "code": "const arr = [1, 2, 3];\nconst nuevoArr = [...arr, 4, 5];",
+      "answers": [
+         "Desestructura arrays y objetos",
+         "Concatena arrays",
+         "Une strings",
+         "Multiplica valores"
+      ],
+      "correctAnswer": 0
+   }
+]
